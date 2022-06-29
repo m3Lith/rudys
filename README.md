@@ -1,97 +1,79 @@
-# rouille
+# Rūdys
 
-![](https://github.com/bnjbvr/rouille/raw/principale/logo.jpeg)
+> Because fuck you and also I hate rust lmao
 
-Aren't you _le tired_ from writing Rust programs in English? Do you like saying
-"merde" a lot? Would you like to try something different, in an exotic and
-funny-sounding language? Would you want to bring some French touch to your
+![UwU](/logo.png)
+
+Aren't you tired from writing Rust programs in English? Do you like saying
+"panikuok" a lot? Would you like to try something different, in an exotic and
+funny-sounding language? Would you want to bring some Lithuanian touch to your
 programs?
 
-**rouille** (French for _Rust_) is here to save your day, as it allows you to
-write Rust programs in French, using French keywords, French function names,
-French idioms.
+**Rūdys** (Lithuanian for _Rust_) is here to save your day, as it allows you to
+write Rust programs in Lithuanian, using Lithuanian keywords, Lithuanian function names,
+Lithuanian idioms.
 
 This has been designed to be used as the official programming language to
-develop the future French sovereign operating system. 
+develop the future Lithuanian sovereign operating system.
 
-If you're from the French or any other governement with French as an official 
-language: I will be awaiting your donations on
-[liberapay](https://liberapay.com/bnjbvr/).
-
-You're from Quebec (or elsewhere) and don't feel at ease using only French words? 
+You're from Quebec (or elsewhere) and don't feel at ease using only Lithuanian words?
 
 Don't worry!
-French Rust is fully compatible with English-Rust, so you can mix both at your
+Lithuanian Rust is fully compatible with English-Rust, so you can mix both at your
 convenience.
 
-Here's an example of what can be achieved with Rouille:
+Here's an example of what can be achieved with Rūdys:
 
-### trait and impl (aka convention et réalisation)
+### trait and impl (aka bruožas ir implementacija)
 
 ```rust
-rouille::rouille! {
-    utilisons std::collections::Dictionnaire comme Dico;
+rudys::rudys! {
+    nauduok std::collections::Hashmapas kaip Žodynas;
 
-    convention CléValeur {
-        fonction écrire(&soi, clé: Chaine, valeur: Chaine);
-        fonction lire(&soi, clé: Chaine) -> PeutÊtre<&Chaine>;
+    bruožas KaBlet {
+        funkcija rašyk(&pats, raktas: Styga, vertė: Styga);
+        funkcija skaityk(&pats, raktas: Styga) -> Option<&Styga>;
     }
 
-    statique mutable DICTIONNAIRE: PeutÊtre<Dico<Chaine, Chaine>> = Rien;
+    statinis kintamas ŽODYNAS: Parinktis<Žodynas<Chaine, Chaine>> = Joks;
 
-    structure Concrète;
+    struktūra Betono;
 
-    réalisation CléValeur pour Concrète {
-        fonction écrire(&soi, clé: Chaine, valeur: Chaine) {
-            soit dico = dangereux {
-                DICTIONNAIRE.prendre_ou_insérer_avec(Défaut::défaut)
+    implementacija KaBlet dėl Betono {
+        funkcija rašyk(&pats, raktas: Styga, vertė: Styga) {
+            leisk žodynas = nesaugus {
+                ŽODYNAS(Numatytas::numatytas)
             };
-            dico.insérer(clé, valeur);
+            žodynas(raktas, vertė);
         }
-        fonction lire(&soi, clé: Chaine) -> Résultat<PeutÊtre<&Chaine>, Chaine> {
-            si soit Quelque(dico) = dangereux { DICTIONNAIRE.en_réf() } {
-                Bien(dico.lire(&clé))
-            } sinon {
-                Arf("fetchez le dico".vers())
+        funkcija skaityk(&pats, raktas: Styga) -> Resultatas<Parinktis<&Styga>, Styga> {
+            jeigu leisk Kažkoks(dico) = nesaugus { ŽODYNAS() } {
+                Gerai(dico.lire(&clé))
+            } kitaip {
+                Klaid("Atsinešti žodyną".vers()) // Nemoku prancūzų :(
             }
         }
     }
 }
 ```
 
-### Support for regional languages
-
-```rust
-#[légal(code_inaccessible)]
-fonction secondaire() {
-    merde!("oh non"); // for the true French experience
-    calisse!("tabarnak"); // for friends speaking fr-ca
-    oups!("fetchez la vache"); // in SFW contexts
-}
-```
-
 ### Other examples
 
 See the [examples](./examples/src/main.rs) to get a rough sense of the whole
-syntax. Voilà, that's it.
+syntax. Viskas, that's it.
 
-## les contributions
+## Contributions
 
-First of all, _merci beaucoup_ for considering participating to this joke, the
-French government will thank you later! Feel free to throw in a few identifiers
-here and there, and open a pull-request against the `principale` (French for
+First of all, _labai ačiū_ for considering participating to this joke, the
+Lithuanian government will thank you later! Feel free to throw in a few identifiers
+here and there, and open a pull-request against the `pagrindinis` (Lithuanian for
 `main`) branch.
 
-Please don't introduce swear words, though: we will not excuse your French.
+Please don't introduce swear words, though: we will not excuse your Lithuanian.
 
-## but why would you do zat
+## but why would you do det
 
-- horsin around
-- playing with raw proc macros
-- making a bit of fun about programming languages that do this seriously,
-  though I can see their utility.
-- winking at [Marcel](https://github.com/brouberol/marcel)
-- c'est chic
+- jes
 
 ## Other languages
 
@@ -121,13 +103,10 @@ Please don't introduce swear words, though: we will not excuse your French.
 - Catalan: [rovell](https://github.com/gborobio73/rovell)
 - Corsican: [rughjina](https://github.com/aldebaranzbradaradjan/rughjina)
 - Indonesian: [karat](https://github.com/annurdien/karat)
+- French: [rouille](https://github.com/bnjbvr/rouille)
 
-## un grand merci
-
-- [@VentGrey](https://twitter.com/VentGrey) for making a logo!
-
-## la license
+## License
 
 [License Publique Rien à Branler](http://sam.zoy.org/lprab/),
-_le_ official translation of the [WTFPL](http://www.wtfpl.net/)
+the official translation of the [WTFPL](http://www.wtfpl.net/)
 by the same author.
