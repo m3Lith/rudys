@@ -1,5 +1,2 @@
 [workspace]
-members = [
-    "rudys_proc_macro",
-    "examples"
-]
+members = [ "rudys_proc_macro" ]
