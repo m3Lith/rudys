@@ -13,7 +13,7 @@ fn replace_ident(ident: Ident) -> Option<TokenTree> {
         "Parinktis" => "Option",
         "Kažkoks" => "Some",
         "Joks" => "None",
-        "Resultatas" => "Result",
+        "Rezultatas" => "Result",
         "Pats" => "Self",
         "spausdinkliniją" => "println",
         "pertrauk" => "break",

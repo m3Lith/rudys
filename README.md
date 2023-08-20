@@ -46,7 +46,7 @@ rudys::rudys! {
             };
             žodynas(raktas, vertė);
         }
-        funkcija skaityk(&pats, raktas: Styga) -> Resultatas<Parinktis<&Styga>, Styga> {
+        funkcija skaityk(&pats, raktas: Styga) -> Rezultatas<Parinktis<&Styga>, Styga> {
             jeigu leisk Kažkoks(dico) = nesaugus { ŽODYNAS() } {
                 Gerai(dico.lire(&clé))
             } kitaip {
